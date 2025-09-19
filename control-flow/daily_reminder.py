@@ -19,5 +19,8 @@ match priority:
 # Modify message if task is time-bound
 if time_bound == "yes":
     message += " that requires immediate attention today!"
+elif time_bound == "no":
+    message += ". Consider completing it when you have free time."
 
+# Print the customized reminder
 print(message)
