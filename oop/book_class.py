@@ -10,7 +10,7 @@ class Book:
         self.title = title
         self.author = author
         self.year = year
-        print(f"Book '{self.title}' created.")
+        
 
     def __del__(self):
         """Destructor: print a message when object is deleted"""
@@ -23,3 +23,4 @@ class Book:
     def __repr__(self):
         """Official representation that can recreate the object"""
         return f"Book('{self.title}', '{self.author}', {self.year})"
+
